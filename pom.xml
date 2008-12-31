@@ -46,7 +46,7 @@ License along with Postal.  If not, see <http://www.gnu.org/licenses/>.
 		<dependency>
 			<groupId>com.ryanberdeen.rjs</groupId>
 			<artifactId>rjs-server</artifactId>
-			<version>0.1-SNAPSHOT</version>
+			<version>0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>

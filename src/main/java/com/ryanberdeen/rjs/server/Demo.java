@@ -20,7 +20,6 @@ public class Demo extends RjsHandlerAdapter  {
 		clients.remove(client);
 	}
 
-	@Override
 	public void messageReceived(RjsClient client, String message) throws Exception {
 		for (RjsClient c : clients) {
 			c.send(message);
@@ -30,7 +29,7 @@ public class Demo extends RjsHandlerAdapter  {
 	public static void main(String[] args) throws IOException {
 		RjsServer server = new RjsServer();
 		server.setPort(1843);
-		server.setIoHandler(new Demo());
+		server.setHandler(new Demo());
 		server.start();
 	}
 }
